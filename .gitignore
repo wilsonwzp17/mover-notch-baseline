@@ -1,0 +1,22 @@
+# ---- COMPLIANCE: MOVER data must never be committed ----
+# The MOVER data use agreement states: "I will not redistribute the data."
+data/**
+!data/README.md
+*.tar.gz
+*.parquet
+*.h5
+*.hdf5
+*.mat
+*.npy
+*.npz
+# ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.DS_Store
+results/**/*.csv
+!results/snr_sweep*.csv
+!results/.gitkeep

@@ -1,0 +1,18 @@
+# SNR sweep.
+#
+# NOTE ON RANGE. Pal et al. 2024 sweep -30 to -5 dB, but their SNR is defined on
+# the non-stationary output of the IEM filter, whereas this study defines it on
+# the raw AC signal (see movernotch/noise.py). Under this definition the -30 to
+# -5 dB window sits entirely inside the broken regime and produces a nearly flat,
+# uninformative curve. The range below covers the actual transition. Copying the
+# published range without checking would have produced a plausible-looking but
+# empty result.
+fs: 256.0
+n_beats: 200
+snr_db_min: -30
+snr_db_max: 40
+snr_db_step: 2
+noise_band: [0.5, 40.0]
+seed: 0
+source: synthetic        # switch to "mover" once data/raw is populated
+abp_mmhg: false

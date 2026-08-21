@@ -1,0 +1,16 @@
+# SNR sweep on REAL MOVER arterial signal.
+# References are landmarks detected at native signal quality, then recovery is
+# measured under controlled degradation: a self-consistency reference, weaker
+# than expert annotation. See README.md.
+fs: 180.0                 # overridden by the rate read from the records
+n_beats: 0                # unused for source: mover
+snr_db_min: -30
+snr_db_max: 40
+snr_db_step: 2
+noise_band: [0.5, 40.0]
+seed: 0
+source: mover
+records_file: data/usable_records.txt
+max_records: 2
+max_windows: 200
+abp_mmhg: true

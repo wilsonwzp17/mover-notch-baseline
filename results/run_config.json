@@ -1,0 +1,18 @@
+{
+  "fs": 180.0,
+  "n_beats": 0,
+  "snr_db_min": -30,
+  "snr_db_max": 40,
+  "snr_db_step": 2,
+  "noise_band": [
+    0.5,
+    40.0
+  ],
+  "seed": 0,
+  "source": "mover",
+  "records_file": "data/usable_records.txt",
+  "max_records": 2,
+  "max_windows": 200,
+  "abp_mmhg": true,
+  "provenance": "MOVER, 2 record(s) contributing, 200 QC-passing 4 s windows, 940 reference notches @ 120.0 Hz (measured)"
+}
